@@ -1,0 +1,126 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.main-content {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.form-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  background-color: transparent;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.menu-icon {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.label-title {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+
+.course-info {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+.course-icon {
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+.name-fields {
+  display: flex;
+  gap: 15px;
+}
+
+.name-fields input {
+  flex: 1;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.enroll-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.enroll-btn:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 600px) {
+  .name-fields {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar a {
+    margin-bottom: 10px;
+  }
+}
