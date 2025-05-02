@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px 50px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+  color: #111827;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.nav-links a.signup-btn {
+  background-color: #2563eb;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  gap: 40px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  color: #111827;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.hero-image img {
+  max-width: 700px;
+  height: auto;
+  border-radius: 12px;
+  transform: translateX(-40px);
+}
+
+/* What you'll build */
+.personal {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.personal img {
+  max-width: 45px;
+  height: auto;
+  border-radius: 10px;
+  flex-shrink: 0;
+  background-color: #e0e7ff; /* subtle background color */
+  padding: 8px;
+}
+
+.personal h5 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.personal p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Video Lessons Section */
+.video-lessons {
+  margin-top: 40px;
+}
+
+.video-lessons h3 {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.lesson {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 12px 20px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.lesson:hover {
+  background-color: #f3f4f6;
+}
+
+.lesson .play-icon {
+  width: 26px;
+  height: 26px;
+  background-color: #e0e7ff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lesson .play-icon svg {
+  fill: #2563eb;
+  width: 14px;
+  height: 14px;
+  margin-left: 2px;
+}
+
+/* Progress Bar */
+.progress-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.progress-bar {
+  flex-grow: 1;
+  height: 10px;
+  background-color: #e5e7eb;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-bar-inner {
+  height: 100%;
+  width: 70%; /* for 70% complete */
+  background-color: #2563eb;
+  border-radius: 20px 0 0 20px;
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  font-size: 0.9rem;
+  color: #374151;
+  width: 60px;
+  text-align: right;
+  font-weight: 600;
+}
+
+/* Start Learning button */
+.start-btn {
+  display: inline-block;
+  background-color: #2563eb;
+  color: white;
+  padding: 14px 0;
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 25px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.start-btn:hover {
+  background-color: #1e40af;
+}
+
+/* Help text */
+.help-text {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #6b7280;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image img {
+    transform: translateX(0);
+    max-width: 220px;
+    margin-top: 20px;
+  }
+
+  body {
+    padding: 20px;
+  }
+}
